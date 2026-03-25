@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qbits - Kioscos - El sistema #1 para Kioscos en Argentina</title>
+<meta property="og:title" content="QBITS - El sistema #1 para Kioscos en Argentina">
+<meta property="og:description" content="Gestioná tu stock, ventas y proveedores. El sistema más rápido y fácil para tu kiosco.">
+<meta name="description" content="Gestioná tu stock, ventas y proveedores. El sistema más rápido y fácil para tu kiosco.">
+<link rel="icon" href="https://qbitsapp.com/assets/favicon-Dt1VOOEz.ico">
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','966854009200030');fbq('track','PageView');</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#000;color:#fff}
+.qk-wrap{max-width:900px;margin:0 auto;padding:20px}
+.qk-hero{text-align:center;padding:60px 20px 40px}
+.qk-badge{display:inline-block;background:#0e7490;color:#fff;font-size:12px;font-weight:700;padding:4px 14px;border-radius:999px;text-transform:uppercase;letter-spacing:1px;margin-bottom:18px}
+.qk-title{font-size:clamp(28px,5vw,52px);font-weight:900;line-height:1.1;margin-bottom:20px}
+.qk-title span{color:#06b6d4}
+.qk-sub{font-size:18px;color:#9ca3af;margin-bottom:32px;max-width:600px;margin-left:auto;margin-right:auto}
+.qk-cta{display:inline-block;background:#06b6d4;color:#000;font-size:18px;font-weight:800;padding:18px 40px;border-radius:10px;text-decoration:none;text-transform:uppercase;margin:10px}
+.qk-cta:hover{background:#0891b2}
+.qk-pain{background:#111;padding:60px 20px}
+.qk-pain-title{text-align:center;font-size:28px;font-weight:800;margin-bottom:40px;color:#f87171}
+.qk-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;max-width:900px;margin:0 auto}
+.qk-card{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:12px;padding:24px}
+.qk-card-icon{font-size:28px;margin-bottom:12px}
+.qk-card-title{font-size:16px;font-weight:700;margin-bottom:8px}
+.qk-card-desc{font-size:14px;color:#9ca3af;line-height:1.5}
+.qk-features{padding:60px 20px}
+.qk-features-title{text-align:center;font-size:28px;font-weight:800;margin-bottom:10px}
+.qk-features-sub{text-align:center;color:#9ca3af;margin-bottom:40px}
+.qk-feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;max-width:900px;margin:0 auto 40px}
+.qk-feat{display:flex;align-items:flex-start;gap:14px;padding:20px;background:#111;border-radius:12px;border:1px solid #1f2937}
+.qk-feat-icon{font-size:22px;flex-shrink:0}
+.qk-feat-text h3{font-size:15px;font-weight:700;margin-bottom:6px}
+.qk-feat-text p{font-size:13px;color:#9ca3af;line-height:1.5}
+.qk-testi{background:#111;padding:60px 20px}
+.qk-testi-title{text-align:center;font-size:28px;font-weight:800;margin-bottom:40px}
+.qk-testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;max-width:900px;margin:0 auto}
+.qk-testi-card{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:12px;padding:24px}
+.qk-testi-text{font-size:14px;color:#d1d5db;line-height:1.7;font-style:italic;margin-bottom:16px}
+.qk-testi-author{font-size:13px;font-weight:700;color:#06b6d4}
+.qk-pricing{padding:60px 20px;text-align:center}
+.qk-pricing-title{font-size:28px;font-weight:800;margin-bottom:10px}
+.qk-pricing-sub{color:#9ca3af;margin-bottom:40px}
+.qk-price-box{background:#111;border:2px solid #06b6d4;border-radius:16px;max-width:440px;margin:0 auto;padding:36px}
+.qk-price-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#06b6d4;margin-bottom:8px}
+.qk-price-old{font-size:18px;color:#6b7280;text-decoration:line-through;margin-bottom:4px}
+.qk-price-new{font-size:54px;font-weight:900;color:#06b6d4;line-height:1;margin-bottom:6px}
+.qk-price-per{font-size:14px;color:#9ca3af;margin-bottom:24px}
+.qk-price-features{text-align:left;margin-bottom:28px}
+.qk-price-features li{list-style:none;padding:8px 0;border-bottom:1px solid #1f2937;font-size:14px;color:#d1d5db}
+.qk-price-features li::before{content:"✓ ";color:#06b6d4;font-weight:700}
+.qk-timer{background:#0c0c0c;border:1px solid #1f2937;border-radius:8px;padding:12px;margin-bottom:20px}
+.qk-timer-label{font-size:11px;color:#9ca3af;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.qk-timer-display{font-size:28px;font-weight:900;color:#f87171;font-variant-numeric:tabular-nums}
+.qk-guarantee{font-size:12px;color:#6b7280;margin-top:12px}
+.qk-faq{background:#0a0a0a;padding:60px 20px}
+.qk-faq-title{text-align:center;font-size:28px;font-weight:800;margin-bottom:40px}
+.qk-faq-item{max-width:700px;margin:0 auto 20px;background:#111;border:1px solid #1f2937;border-radius:12px;padding:20px 24px}
+.qk-faq-q{font-size:15px;font-weight:700;margin-bottom:10px}
+.qk-faq-a{font-size:14px;color:#9ca3af;line-height:1.6}
+.qk-footer-cta{background:#111;padding:60px 20px;text-align:center}
+.qk-footer-cta h2{font-size:28px;font-weight:800;margin-bottom:12px}
+.qk-footer-cta p{color:#9ca3af;margin-bottom:28px}
+@keyframes qk-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+.qk-cta-pulse{animation:qk-pulse 2s infinite}
+</style>
+</head>
+<body>
+<div class="qk-wrap">
+<div class="qk-hero">
+<div class="qk-badge">🏪 Sistema para Kioscos</div>
+<h1 class="qk-title">Tu kiosco sigue <span>perdiendo plata</span><br>sin saberlo</h1>
+<p class="qk-sub">Mientras seguís con cuaderno, la competencia ya usa IA. QBITS te da control total desde el celular — sin complicaciones.</p>
+<a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=3eea9a58f1884d4b89aae6869a34abcb" class="qk-cta qk-cta-pulse">🚀 ACTIVÁ TU KIOSCO INTELIGENTE</a>
+<p style="color:#6b7280;font-size:13px;margin-top:12px">⚡ Promo activa — solo por las próximas 24hs</p>
+</div>
+<div class="qk-pain">
+<h2 class="qk-pain-title">¿Esto te pasa en tu kiosco?</h2>
+<div class="qk-grid">
+<div class="qk-card"><div class="qk-card-icon">📋</div><div class="qk-card-title">No sabés qué tenés en stock</div><div class="qk-card-desc">Contás a ojo y siempre te falta lo que más se vende. Inmovilizás capital en lo que no rota.</div></div>
+<div class="qk-card"><div class="qk-card-icon">🔒</div><div class="qk-card-title">Sospechás del cajero</div><div class="qk-card-desc">Sentís que te están afanando pero no tenés forma de probarlo ni de pararlo.</div></div>
+<div class="qk-card"><div class="qk-card-icon">🏝️</div><div class="qk-card-title">No podés irte de vacaciones</div><div class="qk-card-desc">Si no estás vos, el kiosco es tierra de nadie. No podés soltar el control ni un día.</div></div>
+<div class="qk-card"><div class="qk-card-icon">📓</div><div class="qk-card-title">Seguís con cuaderno</div><div class="qk-card-desc">Como en el año 2000. Mientras la competencia usa IA, vos seguís tachando papelitos.</div></div>
+<div class="qk-card"><div class="qk-card-icon">⏱️</div><div class="qk-card-title">Cierre de Caja Lento</div><div class="qk-card-desc">Tardás horas en cerrar y nunca te dan los números exactos.</div></div>
+<div class="qk-card"><div class="qk-card-icon">📈</div><div class="qk-card-title">No sabés si ganás o perdés</div><div class="qk-card-desc">Vendés todo el día pero al final del mes no sabés si realmente estás ganando.</div></div>
+</div>
+</div>
+<div class="qk-features">
+<h2 class="qk-features-title">Qué hace QBITS por tu kiosco</h2>
+<p class="qk-features-sub">Control total. Sin planillas. Sin cálculos a mano.</p>
+<div class="qk-feat-grid">
+<div class="qk-feat"><div class="qk-feat-icon">📸</div><div class="qk-feat-text"><h3>Foto a la factura → Stock cargado</h3><p>Sacás una foto al remito del proveedor y la IA carga todo el stock en 3 segundos. Se acabó el tipear.</p></div></div>
+<div class="qk-feat"><div class="qk-feat-icon">🤖</div><div class="qk-feat-text"><h3>IA Conversacional</h3><p>Preguntale "¿cuánto vendí ayer?" y te responde como un humano. Control total sin mirar planillas.</p></div></div>
+<div class="qk-feat"><div class="qk-feat-icon">🔒</div><div class="qk-feat-text"><h3>Caja Blindada Anti-Robos</h3><p>Control total de cada centavo. Si falta un alfajor, el sistema te lo dice.</p></div></div>
+<div class="qk-feat"><div class="qk-feat-icon">📱</div><div class="qk-feat-text"><h3>Control desde el Celular</h3><p>Andate de vacaciones. Controlás el kiosco desde donde estés — ventas, caja y stock en tiempo real.</p></div></div>
+<div class="qk-feat"><div class="qk-feat-icon">📊</div><div class="qk-feat-text"><h3>Reportes de Ganancia Real</h3><p>Sabé exactamente cuánto ganaste y qué productos no rinden. Sin dudas, sin estimaciones.</p></div></div>
+<div class="qk-feat"><div class="qk-feat-icon">🧾</div><div class="qk-feat-text"><h3>Facturación ARCA Integrada</h3><p>Emitís tickets legales en segundos desde el celular. Sin renegar con AFIP.</p></div></div>
+</div>
+<div style="text-align:center"><a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=3eea9a58f1884d4b89aae6869a34abcb" class="qk-cta">QUIERO EL MISMO CONTROL EN MI KIOSCO</a></div>
+</div>
+<div class="qk-testi">
+<h2 class="qk-testi-title">Lo que dicen los kiosqueros</h2>
+<div class="qk-testi-grid">
+<div class="qk-testi-card"><p class="qk-testi-text">"No cargué más un producto a mano. Foto a la factura y a otra cosa. Me cambió la vida."</p><div class="qk-testi-author">— Polirrubro Lanús</div></div>
+<div class="qk-testi-card"><p class="qk-testi-text">"Me pude ir 15 días a la costa y controlé todo desde la carpa. Antes era imposible."</p><div class="qk-testi-author">— Kiosco 24hs</div></div>
+<div class="qk-testi-card"><p class="qk-testi-text">"El sistema recupera la guita solo. Detecté que me faltaban 20 lucas por día en errores de carga."</p><div class="qk-testi-author">— Maxikiosco Quilmes</div></div>
+<div class="qk-testi-card"><p class="qk-testi-text">"Le pregunto a la IA cuánto vendí ayer y me responde al toque. Chau cuaderno."</p><div class="qk-testi-author">— Kiosco Buenos Aires</div></div>
+<div class="qk-testi-card"><p class="qk-testi-text">"Pensé que iba a ser difícil pero la IA te enseña todo. En una tarde ya estaba facturando."</p><div class="qk-testi-author">— Kiosquero Rosario</div></div>
+<div class="qk-testi-card"><p class="qk-testi-text">"El sistema me cuida la plata. Detecté cuántos alfajores se tiraban y los convertí en ganancia."</p><div class="qk-testi-author">— Minimarket CABA</div></div>
+</div>
+</div>
+<div class="qk-pricing">
+<h2 class="qk-pricing-title">Activá la promo antes que se acabe</h2>
+<p class="qk-pricing-sub">Precio real $38.999/mes — activá en las próximas 24hs y queda congelado 12 meses</p>
+<div class="qk-price-box">
+<div class="qk-price-label">🔥 Precio Promo — Solo 24hs</div>
+<div class="qk-price-old">$38.999/mes</div>
+<div class="qk-price-new">$23.000</div>
+<div class="qk-price-per">/mes — precio congelado 12 meses</div>
+<div class="qk-timer"><div class="qk-timer-label">⏳ La promo vence en</div><div class="qk-timer-display" id="qk-countdown">24:00:00</div></div>
+<ul class="qk-price-features">
+<li>Foto a factura → Stock en 3 segundos</li>
+<li>IA conversacional incluida</li>
+<li>Caja blindada anti-robos</li>
+<li>Control desde el celular (ilimitado)</li>
+<li>Reportes de ganancia real</li>
+<li>Facturación ARCA integrada</li>
+<li>Soporte por WhatsApp</li>
+</ul>
+<a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=3eea9a58f1884d4b89aae6869a34abcb" class="qk-cta" style="display:block;text-align:center;width:100%">🟣 ACTIVAR AHORA — COMPRAR SISTEMA</a>
+<p class="qk-guarantee">✓ Garantía 20 días — si no te sirve, te devolvemos el 100%</p>
+</div>
+</div>
+<div class="qk-faq">
+<h2 class="qk-faq-title">Preguntas frecuentes</h2>
+<div class="qk-faq-item"><div class="qk-faq-q">¿Necesito una computadora?</div><div class="qk-faq-a">No. Podés usar tu celular, una tablet o la notebook que ya tengas. El sistema vuela en cualquier dispositivo.</div></div>
+<div class="qk-faq-item"><div class="qk-faq-q">¿Sirve si tengo varias sucursales?</div><div class="qk-faq-a">Es ideal. Controlás todos tus kioscos desde la misma app y ves en tiempo real quién está vendiendo y quién no.</div></div>
+<div class="qk-faq-item"><div class="qk-faq-q">¿Viene con facturación ARCA?</div><div class="qk-faq-a">Sí. Emitís tickets legales en segundos desde el celular sin renegar con la página de AFIP.</div></div>
+<div class="qk-faq-item"><div class="qk-faq-q">¿Cómo es lo de la foto a la factura?</div><div class="qk-faq-a">Le sacás una foto al remito del proveedor, la IA reconoce los productos y te carga el stock al instante. Magia real.</div></div>
+<div class="qk-faq-item"><div class="qk-faq-q">¿Qué pasa si no me sirve?</div><div class="qk-faq-a">Tenés 20 días de garantía total. Si sentís que no es para vos, te devolvemos el 100% de la guita sin vueltas.</div></div>
+<div class="qk-faq-item"><div class="qk-faq-q">¿Puedo ver las ventas si no estoy en el local?</div><div class="qk-faq-a">Ese es el punto. Mirás las ventas, la caja y el stock desde tu casa, el gimnasio o de vacaciones.</div></div>
+</div>
+<div class="qk-footer-cta">
+<h2>Control total en tu kiosco — desde hoy</h2>
+<p>Sin planillas. Sin cálculos a mano. Sin dudas sobre lo que realmente está pasando.</p>
+<a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=3eea9a58f1884d4b89aae6869a34abcb" class="qk-cta qk-cta-pulse">🚀 LISTO, QUIERO EMPEZAR — COMPRAR SISTEMA PARA MI KIOSCO</a>
+<p style="color:#6b7280;font-size:12px;margin-top:16px">✓ Garantía 20 días ✓ Precio congelado 12 meses ✓ Soporte incluido</p>
+</div>
+</div>
+<script>
+(function(){var end=new Date(Date.now()+24*60*60*1000);var el=document.getElementById('qk-countdown');if(!el)return;setInterval(function(){var diff=end-Date.now();if(diff<=0){el.textContent='00:00:00';return}var h=Math.floor(diff/3600000);var m=Math.floor((diff%3600000)/60000);var s=Math.floor((diff%60000)/1000);el.textContent=String(h).padStart(2,'0')+':'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')},1000)})();
+</script>
+</body>
+</html>
